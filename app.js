@@ -17,6 +17,6 @@ function guardarUsuario() {
   console.log(usuario);
   console.log(usuario.nombre);
   console.log(usuario.edad);
-  localStorage.setItem("usuario", usuario);
+  localStorage.setItem("usuario", JSON.stringify(usuario));
   window.location.href = "choseGame.html";
 }

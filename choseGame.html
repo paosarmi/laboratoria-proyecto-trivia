@@ -19,6 +19,22 @@
       </div>
     </header>
     <div>
+      <h2 id="mensajeBienvenida"></h2>
+
+      <script>
+        const tipo = localStorage.getItem("tipo");
+        if (tipo === "rapido") {
+          document.getElementById("mensajeBienvenida").innerHTML =
+            "Bienvenido jugador";
+        } else {
+          const usuario = JSON.parse(localStorage.getItem("usuario"));
+          const nombre = usuario.nombre;
+          document.getElementById("mensajeBienvenida").innerHTML =
+            "Bienvenido " + nombre;
+        }
+      </script>
+    </div>
+    <div>
       <h2>Es hora de probar tu conocimiento</h2>
       <h3>Elige tu categoría favorita</h3>
     </div>
