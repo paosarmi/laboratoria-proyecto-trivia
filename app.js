@@ -1,7 +1,7 @@
 function irAElegirTema(tipo) {
   localStorage.setItem("tipo", tipo);
   if (tipo === "rapido") {
-    window.location.href = "choseGame.html";
+    window.location.href = "chooseGame.html";
   } else {
     window.location.href = "registro.html";
   }
@@ -9,14 +9,11 @@ function irAElegirTema(tipo) {
 function guardarUsuario() {
   const nombre = document.getElementById("nombre").value;
   const edad = document.getElementById("edad").value;
-  console.log(nombre);
   const usuario = {
     nombre: nombre,
     edad: edad,
   };
-  console.log(usuario);
-  console.log(usuario.nombre);
-  console.log(usuario.edad);
+
   localStorage.setItem("usuario", JSON.stringify(usuario));
-  window.location.href = "choseGame.html";
+  window.location.href = "chooseGame.html";
 }

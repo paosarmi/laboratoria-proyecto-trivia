@@ -14,23 +14,22 @@
       <div>
         <!-- contenedor titulo -->
         <h1>
-          Titulo Trivia
+          <a href="index.html">Titulo Trivia</a>
         </h1>
       </div>
     </header>
     <div>
       <h2 id="mensajeBienvenida"></h2>
-
       <script>
-        const tipo = localStorage.getItem("tipo");
-        if (tipo === "rapido") {
+        const tipoJuego = localStorage.getItem("tipo");
+        if (tipoJuego === "rapido") {
           document.getElementById("mensajeBienvenida").innerHTML =
             "Bienvenido jugador";
         } else {
-          const usuario = JSON.parse(localStorage.getItem("usuario"));
-          const nombre = usuario.nombre;
+          const usuarioJuego = JSON.parse(localStorage.getItem("usuario"));
+          const nombreJugador = usuarioJuego.nombre;
           document.getElementById("mensajeBienvenida").innerHTML =
-            "Bienvenido " + nombre;
+            "Bienvenido " + nombreJugador;
         }
       </script>
     </div>

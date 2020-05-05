@@ -40,7 +40,7 @@ h2 {
 
 /*Navegación*/
 
-.navegacion a {
+.navegacion {
   color: #043241;
   text-decoration: none;
   font-size: 1.9rem;
@@ -48,4 +48,10 @@ h2 {
 }
 .navegacion a:hover {
   color: #27c021;
+}
+
+/*Footer*/
+
+footer {
+  align-content: space-between;
 }
