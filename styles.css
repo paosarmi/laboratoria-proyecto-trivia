@@ -3,7 +3,7 @@ html {
   font-size: 62.5%; /**Reset para REMS 62.5% = 10px de 16px**/
 }
 
-/**Body**/
+/*Body*/
 
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -11,4 +11,40 @@ body {
   font-size: 2rem;
 }
 
-/**Globales**/
+/*Globales*/
+
+img {
+  max-width: 100%;
+}
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+  line-height: 2;
+}
+h1 {
+  font-size: 3.8rem;
+}
+h2 {
+  font-size: 3.4rem;
+}
+
+/*Utilidades*/
+
+.seccion {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.centrar-texto {
+  text-align: center;
+}
+
+/*Navegación*/
+
+.navegacion a {
+  color: #043241;
+  text-decoration: none;
+  font-size: 1.9rem;
+}
+.navegacion a:hover {
+  color: #27c021;
+}
