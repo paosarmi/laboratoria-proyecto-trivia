@@ -17,3 +17,10 @@ function guardarUsuario() {
   localStorage.setItem("usuario", JSON.stringify(usuario));
   window.location.href = "chooseGame.html";
 }
+function validarRespuestaEscogida(respuestaEscogida) {
+  if (respuestaEscogida.name === "respuestaCorrecta") {
+    console.log("respuesta correcta");
+  } else {
+    console.log("Respuesta incorrecta");
+  }
+}

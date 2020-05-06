@@ -37,6 +37,12 @@ h2 {
 .centrar-texto {
   text-align: center;
 }
+.invisible {
+  display: none;
+}
+.visible {
+  display: block;
+}
 
 /*Botones*/
 
@@ -65,6 +71,46 @@ h2 {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+
+.siguiente {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.siguiente span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.siguiente span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.siguiente:hover span {
+  padding-right: 25px;
+}
+
+.siguiente:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 /*Navegación*/
