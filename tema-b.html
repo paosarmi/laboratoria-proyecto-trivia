@@ -17,14 +17,13 @@
         </h1>
       </div>
     </header>
-
-    <section class="visble">
+    <section id="pregunta1" class="visible">
       <div>
         <h5>pregunta 1</h5>
       </div>
 
       <div>
-        <h2>Tema b</h2>
+        <h2>Tema B</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eos
           nulla facere, voluptate expedita quis labore praesentium pariatur
@@ -33,19 +32,57 @@
         </p>
       </div>
 
-      <button class="boton">A: aqui la respuesta</button>
-      <button class="boton">B: aqui la respuesta</button>
-      <button class="boton">C: aqui la respuesta</button>
-      <button class="boton">D: aqui la respuesta</button>
+      <button
+        id="p1ra"
+        class="boton"
+        onclick="validarRespuestaEscogida(this,'1')"
+      >
+        A: aqui la respuesta
+      </button>
+
+      <button
+        id="p1rb"
+        class="boton"
+        name="respuestaCorrecta"
+        onclick="validarRespuestaEscogida(this,'1')"
+      >
+        B: aqui la respuesta
+      </button>
+
+      <button
+        id="p1rc"
+        class="boton"
+        onclick="validarRespuestaEscogida(this,'1')"
+      >
+        C: aqui la respuesta
+      </button>
+
+      <button
+        id="p1rd"
+        class="boton"
+        onclick="validarRespuestaEscogida(this,'1')"
+      >
+        D: aqui la respuesta
+      </button>
+
+      <div id="p1botonoSiguiente" class="invisible">
+        <button
+          class="siguiente"
+          style="vertical-align: middle;"
+          onclick="irASiguientePregunta('1')"
+        >
+          <span>Siguiente Pregunta </span>
+        </button>
+      </div>
     </section>
 
-    <section class="invisible">
+    <section id="pregunta2" class="invisible">
       <div>
         <h5>pregunta 2</h5>
       </div>
 
       <div>
-        <h2>Tema b</h2>
+        <h2>Tema B</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eos
           nulla facere, voluptate expedita quis labore praesentium pariatur
@@ -54,19 +91,57 @@
         </p>
       </div>
 
-      <button class="boton">A: aqui la respuesta</button>
-      <button class="boton">B: aqui la respuesta</button>
-      <button class="boton">C: aqui la respuesta</button>
-      <button class="boton">D: aqui la respuesta</button>
+      <button
+        id="p2ra"
+        class="boton"
+        name="respuestaCorrecta"
+        onclick="validarRespuestaEscogida(this,'2')"
+      >
+        A: aqui la respuesta
+      </button>
+
+      <button
+        id="p2rb"
+        class="boton"
+        onclick="validarRespuestaEscogida(this,'2')"
+      >
+        B: aqui la respuesta
+      </button>
+
+      <button
+        id="p2rc"
+        class="boton"
+        onclick="validarRespuestaEscogida(this,'2')"
+      >
+        C: aqui la respuesta
+      </button>
+
+      <button
+        id="p2rd"
+        class="boton"
+        onclick="validarRespuestaEscogida(this,'2')"
+      >
+        D: aqui la respuesta
+      </button>
+
+      <div id="p2botonoSiguiente" class="invisible">
+        <button
+          class="siguiente"
+          style="vertical-align: middle;"
+          onclick="irASiguientePregunta('2')"
+        >
+          <span>Siguiente Pregunta </span>
+        </button>
+      </div>
     </section>
 
-    <section class="invisible">
+    <section id="pregunta3" class="invisible">
       <div>
         <h5>pregunta 3</h5>
       </div>
 
       <div>
-        <h2>Tema b</h2>
+        <h2>Tema B</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eos
           nulla facere, voluptate expedita quis labore praesentium pariatur
@@ -75,19 +150,54 @@
         </p>
       </div>
 
-      <button class="boton">A: aqui la respuesta</button>
-      <button class="boton">B: aqui la respuesta</button>
-      <button class="boton">C: aqui la respuesta</button>
-      <button class="boton">D: aqui la respuesta</button>
+      <button
+        id="p3ra"
+        class="boton"
+        onclick="validarRespuestaEscogida(this,'3')"
+      >
+        A: aqui la respuesta
+      </button>
+      <button
+        id="p3rb"
+        class="boton"
+        onclick="validarRespuestaEscogida(this,'3')"
+      >
+        B: aqui la respuesta
+      </button>
+      <button
+        id="p3rc"
+        class="boton"
+        name="respuestaCorrecta"
+        onclick="validarRespuestaEscogida(this,'3')"
+      >
+        C: aqui la respuesta
+      </button>
+      <button
+        id="p3rd"
+        class="boton"
+        onclick="validarRespuestaEscogida(this,'3')"
+      >
+        D: aqui la respuesta
+      </button>
+
+      <div id="p3botonoSiguiente" class="invisible">
+        <button
+          class="siguiente"
+          style="vertical-align: middle;"
+          onclick="irASiguientePregunta('3')"
+        >
+          <span>Siguiente Pregunta </span>
+        </button>
+      </div>
     </section>
 
-    <section class="invisible">
+    <section id="pregunta4" class="invisible">
       <div>
         <h5>pregunta 4</h5>
       </div>
 
       <div>
-        <h2>Tema b</h2>
+        <h2>Tema B</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eos
           nulla facere, voluptate expedita quis labore praesentium pariatur
@@ -96,10 +206,45 @@
         </p>
       </div>
 
-      <button class="boton">A: aqui la respuesta</button>
-      <button class="boton">B: aqui la respuesta</button>
-      <button class="boton">C: aqui la respuesta</button>
-      <button class="boton">D: aqui la respuesta</button>
+      <button
+        id="p4ra"
+        class="boton"
+        onclick="validarRespuestaEscogida(this,'4')"
+      >
+        A: aqui la respuesta
+      </button>
+      <button
+        id="p4rb"
+        class="boton"
+        onclick="validarRespuestaEscogida(this,'4')"
+      >
+        B: aqui la respuesta
+      </button>
+      <button
+        id="p4rc"
+        class="boton"
+        onclick="validarRespuestaEscogida(this,'4')"
+      >
+        C: aqui la respuesta
+      </button>
+      <button
+        id="p4rd"
+        class="boton"
+        name="respuestaCorrecta"
+        onclick="validarRespuestaEscogida(this,'4')"
+      >
+        D: aqui la respuesta
+      </button>
+
+      <div id="p4botonoSiguiente" class="invisible">
+        <button
+          class="siguiente"
+          style="vertical-align: middle;"
+          onclick="finalizarTrivia()"
+        >
+          <span>Finalizar Trivia</span>
+        </button>
+      </div>
     </section>
 
     <footer>
