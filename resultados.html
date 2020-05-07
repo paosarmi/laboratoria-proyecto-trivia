@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trivia Laboratoria</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <!-- contenedor titulo -->
+        <h1>
+          <a href="index.html">Titulo Trivia</a>
+        </h1>
+      </div>
+    </header>
+    <section>
+      <div>
+        <h2 id="puntajeFinal">Tu puntaje fue:</h2>
+        <script>
+          const puntajeFinal = localStorage.getItem("puntaje");
+          document.getElementById("puntajeFinal").innerHTML =
+            "Tu puntaje fue: " + puntajeFinal;
+        </script>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h3 id="respuestasCorrectas">Total Correctas:</h3>
+        <script>
+          const respuestasCorrectas = localStorage.getItem("correctas");
+          document.getElementById("respuestasCorrectas").innerHTML =
+            "Total Correctas: " + respuestasCorrectas;
+        </script>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <h3 id="respuestasIncorrectas">Total Incorrectas:</h3>
+        <script>
+          const respuestasIncorrectas = localStorage.getItem("incorrectas");
+          document.getElementById("respuestasIncorrectas").innerHTML =
+            "Total Incorrectas: " + respuestasIncorrectas;
+        </script>
+      </div>
+    </section>
+    <section>
+      <div>
+        <button class="siguiente" style="vertical-align: middle;">
+          <span>NUEVA PARTIDA </span>
+        </button>
+      </div>
+
+      <div>
+        <button class="button buttonExit">EXIT</button>
+      </div>
+    </section>
+
+    <footer>
+      <p>Todos los derechos reservados &copy;</p>
+      <p>Fecha última actualización: mayo-2020</p>
+    </footer>
+  </body>
+</html>
