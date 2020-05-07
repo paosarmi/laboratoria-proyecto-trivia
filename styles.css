@@ -75,7 +75,7 @@ h2 {
 
 /*Boton EXIT Nuevo*/
 .button {
-  background-color: #4caf50; /* Green */
+  background-color: grey; /* Green */
   border: none;
   color: white;
   padding: 16px 32px;
@@ -88,11 +88,11 @@ h2 {
   cursor: pointer;
 }
 .buttonExit {
-  background-color: #b43d34;
+  background-color: pink;
   color: black;
 }
 .buttonExit:hover {
-  background-color: #f83224;
+  background-color: blue;
   color: white;
 } /*Boton EXIT Nuevo*/
 
@@ -140,7 +140,7 @@ h2 {
 .navegacion {
   display: inline-block;
   font-size: 1.6rem;
-  background-color: #4caf50; /* Green */
+  background-color: #36a0c0;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -159,4 +159,5 @@ h2 {
 
 footer {
   align-content: space-between;
+  align-content: flex-end;
 }

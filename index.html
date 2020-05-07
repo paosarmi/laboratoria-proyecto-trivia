@@ -1,18 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trivia Laboratoria</title>
-    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- optimizar vistas -->
+    <title>WELCOME FUN_app</title>
     <link rel="stylesheet" href="styles.css" />
+    <!-- enlazando css -->
     <script src="app.js"></script>
+    <!-- enlazando el javascript -->
+    <a
+      href="https://www.flaticon.com/authors/smashicons"
+      title="Smashicons"
+    ></a>
+    <a href="https://www.flaticon.com/"></a>
+    <!-- mostrando nuestro favicon -->
   </head>
+  <br />
+  <br />
+  <br />
   <body>
     <header>
       <div>
         <!-- contenedor titulo -->
         <h1>
+          <img
+            style="display: block; margin: 0 auto 0 auto;"
+            src="imagenes/play.jpg"
+            alt="fondoweb"
+          /><!-- mostrando nuestro imagen principal -->
           <a href="index.html">Titulo Trivia</a>
         </h1>
       </div>
@@ -31,20 +47,34 @@
       </section>
     </div>
 
-    <div class="centrar-texto">
+    <div class="navegacion centrar-texto">
       <nav>
-        <div class="navegacion">
-          <a onclick="irAElegirTema('rapido')">Juego Rápido</a>
-        </div>
-        <div class="navegacion">
-          <a onclick="irAElegirTema('personalizado')">Juego personalizado </a>
-        </div>
+        <a
+          onclick="irAElegirTema('rapido')"
+          href="chooseGame.html"
+          style="text-align: center; display: inline-block; width: 100%;"
+          >A JUGAR RÁPIDO</a
+        >
       </nav>
     </div>
-
+    <div class="navegacion centrar-texto">
+      <nav>
+        <a
+          onclick="irAElegirTema('personalizado')"
+          href="registro.html"
+          style="text-align: center; display: inline-block; width: 100%;"
+          >JUEGO PERSONALIZADO</a
+        >
+      </nav>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
     <footer>
       <p>Todos los derechos reservados &copy;</p>
       <p>Fecha última actualización: mayo-2020</p>
+      <p>Página de Mary Bracho y Paola Sarmiento</p>
     </footer>
   </body>
 </html>
