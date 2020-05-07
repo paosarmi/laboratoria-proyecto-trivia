@@ -73,6 +73,7 @@ h2 {
   transform: translateY(4px);
 }
 
+/*Boton EXIT Nuevo*/
 .button {
   background-color: #4caf50; /* Green */
   border: none;
@@ -93,7 +94,7 @@ h2 {
 .buttonExit:hover {
   background-color: #f83224;
   color: white;
-}
+} /*Boton EXIT Nuevo*/
 
 .siguiente {
   display: inline-block;
