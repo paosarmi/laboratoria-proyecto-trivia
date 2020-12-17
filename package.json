@@ -1,0 +1,20 @@
+{
+  "name": "laboratoria-proyecto-trivia",
+  "version": "1.0.0",
+  "description": "Trivia",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paosarmiento/laboratoria-proyecto-trivia.git"
+  },
+  "author": "paola sarmiento <paosarmi270218@hotmail.com> (https://github.com/paosarmi)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paosarmiento/laboratoria-proyecto-trivia/issues"
+  },
+  "homepage": "https://github.com/paosarmiento/laboratoria-proyecto-trivia#readme"
+}
